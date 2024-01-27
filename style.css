@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.image {
+    width: 148%;
+    height: 500px;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-text {
+    position: absolute;
+    bottom: 200px; 
+    left: 20px; 
+    color: white; 
+    font-size: 18px; 
+    font-weight: bold; 
+    padding: 10px; 
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 143.5%;
+}
+
+button {
+    display: inline-block;
+    outline: 0;
+    border:0;
+    cursor: none;
+    text-decoration: none;
+    position: relative;
+    color: #000;
+    background: #fff;
+    line-height: 30px;
+    border-radius: 40px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: rgb(255, 198, 0) -2px -2px 0px 2px, rgb(246, 84, 174) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+    transition: all 0.2s;
+}
+
+button:hover{
+    box-shadow: rgb(246, 84, 174) -2px -2px 0px 2px, rgb(255, 198, 0) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+    transform: scale(1.01);
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+    background-color: teal;
+    padding: 0%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+.carsintro {
+    padding: 20px;
+    height: 150px;
+    text-align: center;
+    background-image: linear-gradient(red, black);
+    color: white;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 96.5%;
+}
+
+.car-card {
+    width: 300px;
+    margin: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+    display: grid;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 18px; 
+    padding: 20px;
+}
+
+.car-card:hover {
+    transform: scale(1.05);
+}
+
+.car-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.like-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.like-btn:hover {
+    background-color: #45a049;
+}
